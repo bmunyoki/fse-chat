@@ -1,0 +1,24 @@
+doctype
+html
+    head
+        title="FSE - Chat"
+        script(src='/client.js')
+        script(src='/socket.io/socket.io.js')
+        script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js')
+    body
+        #chatContainer(style='width: 500px; height: auto; background-color: #fff; border: 2px solid #888; margin: 0 auto; padding: 5px;')
+            #content(style='width: 500px; height: 400px; overflow-y: scroll; padding: 0; margin: 0;')
+            .controls(style='width: 500px; margin: 10px auto;')
+                div#namearea
+                    |   Name:
+                    br
+                    input#name(style='width:480px; height: 15px; padding: 2px; margin-bottom: 5px;')
+                div#conarea
+                    |   Message:
+                    textarea#txt(style='width:480px; height: 50px; padding: 2px; margin-bottom: 5px;')
+                    br
+                div#joinarea
+                    input#join(type='button', value='Join', style='background-color: #048abb; border: none; padding: 10px 20px; color: #fff; font-size: 16px; border-radius: 3px; margin-bottom: 5px;')
+                div#postarea
+                    input#send(type='button', value='Post', style='background-color: #048abb; border: none; padding: 10px 20px; color: #fff; font-size: 16px; border-radius: 3px; margin-bottom: 5px;')
+                    input#exit(type='button', value='Exit', style='background-color: red; border: none; padding: 10px 20px; color: #fff; font-size: 16px; border-radius: 3px; float: right; margin-right: 13px;')

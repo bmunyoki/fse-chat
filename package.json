@@ -1,0 +1,12 @@
+{
+    "name": "FSEAssignmentChatApp",
+    "version": "0.0.0",
+    "description": "Chat application of FSE Assignment",
+    "dependencies": {
+        "socket.io": "latest",
+        "express": "latest",
+        "mysql": "^2.5.4",
+        "jade": "latest"
+    },
+    "author": "Benjamin Munyoki - bmunyoki@andrew.cmu.edu"
+}
